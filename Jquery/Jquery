@@ -25,3 +25,38 @@ $("p").click(function(){
 
 hover é a combinação do mouseenter e mouseleave, recebe duas funções como argumento uma de entrada e uma de saida
 
+
+Manipulação de elementos HTML
+Get / Set 
+Três métodos jQuery simples, mas úteis, para manipulação do DOM são:
+
+text() - Define ou retorna o conteúdo do texto dos elementos selecionados
+html() - Define ou retorna o conteúdo dos elementos selecionados (incluindo marcação HTML)
+val() - Define ou retorna o valor dos campos do formulário
+
+exemplo:
+Set - Para passar um value...
+$("#test1").text("Hello world!"); // com parametro
+
+Get - Para capturar o valor
+ alert("Text: " + $("#test").text()); // sem paramentro
+
+--> dentro do elemento
+.append adiciona conteudo ao fim
+.prepend adiciona conteudo no começo
+--> fora do elemento
+.after inseri o conteudo depois
+.before inseri o conteudo antes
+
+
+Se passar apenas um paramento esta pagando o elemento
+Se passar dois esta settando um valor
+prop()criadas quando a página é renderizada, checked, selected
+attr() atributos nativos do elemento do DOM
+
+remove() remove o elemento e os filhos, pode também passar como paramento a class do elemento filho para que ele remova penas o selecionado
+empty() remove os filhos e deixa o elemto vazio
+
+addClass adiciona uma ou mais classes
+removeClass remove uma ou mais classes
+
