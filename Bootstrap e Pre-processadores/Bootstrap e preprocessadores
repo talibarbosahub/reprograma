@@ -1,0 +1,63 @@
+Bootstrap
+Meta tag responsiva
+
+***CDN 
+É mais rápido por carregar da nuvem
+CSS : Sempre colocar o link do CSS Bootstrap acima do link do css
+JS: colocar antes do termino do body
+***Download
+Bootstrap -> Downloads -> CSS e JS compilado
+extrair e colocar nas respectivas pastas CSS e JS os arquivos .min. (minificados)
+Jquery 
+https://jquery.com/download/ - > ultima versão
+colocar acima do JS do Bootstrap no body
+
+
+Font Awesome
+ìcones são lidos  como uma font e pode mudar a cor no css
+no HTML 
+https://fontawesome.com/icons -> copy HTML -> cola no HTML -> vai em start no site e 
+
+
+Warning: Class existentes do Bootstrap não podemos sobrescrever no css.
+
+Pre-processadores Sass
+
+
+@Mixin admite paramentro chamar usando @includes
+%Placeholder não admite para chamar usar @extende
+
+após criar as pastas 
+--> no terminal npm init
+---> 
+Press ^C at any time to quit.
+package name: (landing-page) 
+....... Is this OK? (yes)
+--> dar enter até o final 
+Para criar o Json
+no terminal 
+---> npm install sass --save-dev salvar como dependencia de desenvolvimento 
+ou
+---> npm install sass 
+npm intall sass -g instalar sass global
+
+--> criar arquivo nome: .gitgnore
+colocar dentro do arquivo /node_modules *serve para ignorar pasta node modules quando subir para o git
+--> criar pasta scss dentro do style
+--> dentro da pasta styles colocar um arquivo style.scss
+linkar no HTML o css normal
+---> Dentro da pasta scss criar arquivos que são separados por secções, body, header e etc... 
+criar novo arquivo _body.scss dentro da pasta scss esse arquivo recebe a estilização do bady por exemplo, e temos que 
+importa-lo dentro da pasta de style.scss com @import 'scss/body';
+--> criar na pasta scss também os arquivos _variables.scss ; _mixins.scss ; _extend.scss  e importa-los n arquivo styles.
+--> _ no começo de cada nome significa que ele só sera lido se importado
+--> no terminal 
+saas style/style.scss style/style.css comando que mandar pegar o arquivo scss e devolve o style.css
+
+sass --watch style/style.scss style/style.css a mesma coisa porém fica automaticamente obervando as mudanças
+
+criar scripts no json 
+no package.json 
+ "sass": "sass style/style.scss style/style.css"
+--> no terminal : npm run sass
+

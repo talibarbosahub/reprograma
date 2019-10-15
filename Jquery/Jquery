@@ -1,0 +1,27 @@
+Framework de Javascript
+seletores com classe e Id ou elementos do Html
+
+$(seletor).acao(porde ou não receber parametros);
+
+
+Boa prática com Jquery :
+Importante que o código script esteja dentro do bloco:
+$(function(){
+    // Seu código aqui
+});
+pois senão o código Jquery executa antes da pagina terminar de ser renderizada
+
+podemos definir o comportamento que ocorre no evento 
+
+Para chamar o evento:
+
+$("p").click();
+
+Para definir o que ocorre quando o evento é chamado:
+
+$("p").click(function(){
+    // Seu código aqui
+});
+
+hover é a combinação do mouseenter e mouseleave, recebe duas funções como argumento uma de entrada e uma de saida
+
