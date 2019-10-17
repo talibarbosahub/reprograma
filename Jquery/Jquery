@@ -60,3 +60,10 @@ empty() remove os filhos e deixa o elemto vazio
 addClass adiciona uma ou mais classes
 removeClass remove uma ou mais classes
 
+seletores
+
+atributos $("[]") e pode fazer comparações $('img[alt= o que você quer que traga]')
+
+
+
+Ajax
